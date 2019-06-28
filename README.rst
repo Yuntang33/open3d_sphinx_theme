@@ -1,54 +1,38 @@
+Open3D Sphinx Theme
+*******************
 
-**************************
-Read the Docs Sphinx Theme
-**************************
+The ``open3d_sphinx_theme`` is a sphinx_ theme based on
+`Read the Docs Sphinx Theme <https://github.com/readthedocs/sphinx_rtd_theme>`__.
 
-.. image:: https://img.shields.io/pypi/v/open3d_sphinx_theme.svg
-   :target: https://pypi.python.org/pypi/open3d_sphinx_theme
-   :alt: Pypi Version
-.. image:: https://travis-ci.org/rtfd/open3d_sphinx_theme.svg?branch=master
-   :target: https://travis-ci.org/rtfd/open3d_sphinx_theme
-   :alt: Build Status
-.. image:: https://img.shields.io/pypi/l/open3d_sphinx_theme.svg
-   :target: https://pypi.python.org/pypi/open3d_sphinx_theme/
-   :alt: License
-.. image:: https://readthedocs.org/projects/sphinx-rtd-theme/badge/?version=latest
-  :target: http://sphinx-rtd-theme.readthedocs.io/en/latest/?badge=latest
-  :alt: Documentation Status
+Usage 1: Installing
+===================
 
-The ``open3d_sphinx_theme`` is a sphinx_ theme designed to look modern and be mobile-friendly.
-This theme is primarily focused to be used on readthedocs.org_ but can work with your
-own sphinx projects. To read more and see a working demo_ head over to readthedocs.org_.
+.. code:: bash
 
-.. _sphinx: http://www.sphinx-doc.org
-.. _readthedocs.org: http://www.readthedocs.org
-.. _demo: https://sphinx-rtd-theme.readthedocs.io/en/latest/
+    python setup.py install
 
 
-Installing
-==========
+In ``conf.py``
 
-The theme is distributed on PyPI_ and can be installed with pip::
+.. code:: python
 
-   pip install open3d_sphinx_theme
+    import open3d_sphinx_theme
 
-For more information read the full installing docs
-`here <https://sphinx-rtd-theme.readthedocs.io/en/latest/installing.html>`__.
-
-.. _PyPI: https://pypi.python.org/pypi/open3d_sphinx_theme
+    html_theme = "open3d_sphinx_theme"
+    html_theme_path = [open3d_sphinx_theme.get_html_theme_path()]
 
 
-Configuration
-=============
+Usage 2: Use as submodule
+=========================
 
-The ``open3d_sphinx_theme`` is highly customizable on both the page level and on a global level.
-To see all the possible configuration options read the configuring docs
-`here <https://sphinx-rtd-theme.readthedocs.io/en/latest/configuring.html>`__.
+Set the correct path
 
+.. code:: python
 
-Contributing
-============
+    theme_path = os.path.join(current_file_dir, "..", "3rdparty", "open3d_sphinx_theme")
+    static_path = os.path.join(theme_path, "static")
 
-If you would like to help improve the theme or have more control
-over the theme in case of a fork please read our contributing guide
-`here <https://sphinx-rtd-theme.readthedocs.io/en/latest/contributing.html>`__.
+    html_theme = "open3d_sphinx_theme"
+    html_theme_path = [theme_path]
+    html_favicon = "_static/open3d_logo.ico"
+    html_static_path = [static_path]
