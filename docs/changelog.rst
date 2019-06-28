@@ -122,7 +122,7 @@ New Features
 * Add option to style external links
 * Add github, gitlab, bitbucket page arguments option
 * Add pygments support
-* Add setuptools entry point allowing to use ``sphinx_rtd_theme`` as
+* Add setuptools entry point allowing to use ``open3d_sphinx_theme`` as
   Sphinx ``html_theme`` directly.
 * Add language to the JS output variable
 
@@ -200,7 +200,7 @@ v0.1.9
 * Fixed modernizr URL
 * Small display style changes on code blocks, figure captions, and nav elements
 
-.. _#215: https://github.com/rtfd/sphinx_rtd_theme/pull/215
+.. _#215: https://github.com/rtfd/open3d_sphinx_theme/pull/215
 
 v0.1.8
 ======

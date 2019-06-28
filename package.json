@@ -1,5 +1,5 @@
 {
-  "name": "sphinx_rtd_theme",
+  "name": "open3d_sphinx_theme",
   "main": "js/theme.js",
   "version": "0.4.3",
   "private": true,

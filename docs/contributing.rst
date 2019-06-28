@@ -3,7 +3,7 @@
 Contributing or modifying the theme
 ***********************************
 
-The sphinx_rtd_theme is primarily a sass_ project that requires a few other sass libraries. I'm
+The open3d_sphinx_theme is primarily a sass_ project that requires a few other sass libraries. I'm
 using bower_ to manage these dependencies and sass_ to build the css. The good news is
 I have a very nice set of grunt_ operations that will not only load these dependencies, but watch
 for changes, rebuild the sphinx demo docs and build a distributable version of the theme.
@@ -73,7 +73,7 @@ Releasing the Theme
 When you release a new version,
 you should do the following:
 
-#. Bump the version in ``sphinx_rtd_theme/__init__.py``, ``bower.json`` and ``package.json`` --
+#. Bump the version in ``open3d_sphinx_theme/__init__.py``, ``bower.json`` and ``package.json`` --
    we try to follow `semver <http://semver.org/>`_, so be careful with breaking changes.
 #. Update the changelog (``docs/changelog.rst``) with the version information.
 #. Run a ``grunt build`` to rebuild all the theme assets.
