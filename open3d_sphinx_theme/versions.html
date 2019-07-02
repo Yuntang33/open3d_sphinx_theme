@@ -6,13 +6,13 @@
     <span class="fa fa-caret-down"></span>
 </span>
 
+<!-- A hack to include an external page to get around CORS policy -->
+<!-- https://stackoverflow.com/a/15250208/1255535 -->
 <div class="rst-other-versions">
     <dl>
     <dt>{{ _('Versions') }}</dt>
         <dd><ul>
-            <li><a href="http://www.open3d.org/docs/latest">latest</a></li>
-            <li><a href="http://www.open3d.org/docs/release">0.7.0 (release)</a></li>
-            <li><a href="http://www.open3d.org/docs/0.6.0">0.6.0</a></li>
+            <script src="http://www.open3d.org/docs/versions.js"></script>
         </ul></dd>
     </dl>
 </div>
