@@ -2,15 +2,17 @@
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
 <span class="rst-current-version" data-toggle="rst-current-version">
     <span class="fa fa-book"> Other Versions</span>
-    v: {{ current_version }}
+    v: {{ version }}
     <span class="fa fa-caret-down"></span>
 </span>
 
 <div class="rst-other-versions">
     <dl>
     <dt>{{ _('Versions') }}</dt>
-    {% for slug, url in versions %}
-        <dd><a href="{{ url }}">{{ slug }}</a></dd>
-    {% endfor %}
+        <dd><ul>
+            <li><a href="http://www.open3d.org/docs/latest">latest</a></li>
+            <li><a href="http://www.open3d.org/docs/release">0.7.0 (release)</a></li>
+            <li><a href="http://www.open3d.org/docs/0.6.0">0.6.0</a></li>
+        </ul></dd>
     </dl>
 </div>
