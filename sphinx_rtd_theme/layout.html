@@ -29,7 +29,6 @@
   {% endif %}
 
   {# JAVASCRIPTS #}
-  {%- block scripts %}
   <script type="text/javascript" src="{{ pathto('_static/js/modernizr.min.js', 1) }}"></script>
   {%- if not embedded %}
   {# XXX Sphinx 1.8.0 made this an external js-file, quick fix until we refactor the template to inherert more blocks directly from sphinx #}
@@ -63,7 +62,6 @@
           href="{{ pathto('_static/opensearch.xml', 1) }}"/>
     {%- endif %}
   {%- endif %}
-  {%- endblock %}
 
   {# CSS #}
   <link rel="stylesheet" href="{{ pathto('_static/' + style, 1) }}" type="text/css" />
@@ -144,7 +142,6 @@
           {% endblock %}
         </div>
 
-        {% block navigation %}
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           {% block menu %}
             {#
@@ -165,7 +162,6 @@
             {% endif %}
           {% endblock %}
         </div>
-        {% endblock %}
       </div>
     </nav>
 
